@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.container-img img {
+    width: 100vw;
+    height: 450px;
+
+}
+
+.container-text h1 {
+    font: normal normal bold 76px/113px Heebo;
+    letter-spacing: 0px;
+    color: #D3E10E;
+    opacity: 1;
+    margin-top: -450px;
+    margin-right: 300px;
+
+
+
+}
+
+.container-text p {
+    font: normal normal normal 20px/26px Heebo;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    margin-right: 550px;
+
+}
+
+.container-form {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    transform: translateY(400px);
+
+
+
+
+}
+
+input {
+    width: 280px;
+    height: 40px;
+    background-color: #F6F6F6;
+    border: 0;
+    border-bottom: 5px solid #D3E10E;
+}
+
+.sub input {
+    width: 120px;
+    background-color: #D3E10E;
+    margin-right: 25px;
+}
+
+label {
+    font: normal normal bold 16px/21px Heebo;
+    letter-spacing: 0px;
+    color: #011560;
+    opacity: 1;
+}
+
+.sub input[value] {
+    font: normal normal bold 18px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #011560;
+    opacity: 1;
+}
+
+@media(max-width:650px) {
+    .container-img img {
+        width: 100vw;
+        height: 450px;
+
+    }
+
+    .container-text h1 {
+        display: block;
+        font: normal normal bold 35px/50px Heebo;
+        letter-spacing: 0px;
+        color: #D3E10E;
+        opacity: 1;
+        margin-right: 55px;
+        margin-top: -350px
+    }
+
+    .container-text p {
+        font: normal normal normal 20px/26px Heebo;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+        opacity: 1;
+        margin-right: 75px;
+        margin-top: 30px;
+
+    }
+
+    .container-form {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 100px;
+        margin-top: -100px;
+      
+
+
+
+
+    }
+    .sub input[value] {
+        width:280px;
+        font: normal normal bold 18px/30px Heebo;
+        letter-spacing: 0.33px;
+        color: #011560;
+        opacity: 1;
+        margin-right: -1px;
+        
+        
+    }
+    
+
+}

@@ -1,0 +1,115 @@
+body{
+  background-color: chocolate;
+}
+
+p.center {
+    text-align: center;
+    color: blue;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+  }
+
+  .buttonOk{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: blue;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .buttonNew{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: blue;
+    font-size: 5rem;
+    color: white;
+  }
+
+  .optionGame{
+    font-size: 2rem;
+  }
+  p {
+    text-align: right;
+    margin-right: 30px;
+  }
+  p:nth-child(3) {
+    color: blue;
+  }
+  select {
+    float: right;
+    margin: 40px;
+    margin-top: 20px;
+  }
+  label:first-of-type {
+    position: absolute;
+    right: 30px;
+  }
+  label:nth-of-type(2) {
+    position: absolute;
+    right: 180px;
+  }
+  #demo1 {
+    position: absolute;
+    right: 100px;
+    top: 160px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  #demo {
+    position: absolute;
+    right: 190px;
+    top: 160px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  #demo2 {
+    position: absolute;
+    right: 170px;
+    top: 160px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  input {
+    position: absolute;
+    right: 330px;
+    top: 215px;
+  }
+  .Equal {
+    position: absolute;
+    right: 260px;
+    top: 160px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  button:first-of-type {
+    position: absolute;
+    right: 520px;
+    top: 215px;
+  }
+  #clearButton {
+    position: absolute;
+    right: 620px;
+    top: 215px;
+  }
+
+  table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px;
+    width: 600px;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  td {
+    border-bottom: 1px solid gray;
+  }
+  th {
+    background-color: grey;
+  }

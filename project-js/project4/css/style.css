@@ -1,0 +1,64 @@
+div {
+    position: relative;
+    float: right;
+    width: 200px;
+    background-color: aquamarine;
+    text-align: right;
+  }
+  div:nth-child(2) div {
+    position: absolute;
+    color: white;
+    background-color: var(--background-color1);
+    text-align: left;
+  }
+  #cou::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    cursor: pointer;
+  }
+
+  div:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--width1);
+    height: var(--height1);
+    background-color: var(--background-color1);
+    font-size: var(--font-size1);
+    border: var(--border1);
+    padding: var(--padding1);
+    margin: var(--padding1);
+    border-radius: var(--raduis1);
+    box-shadow: var(--box-shdow1);
+    overflow: hidden; /*Prevent overflow*/
+    word-wrap: break-word; /* Break long words*/
+  }
+  :root {
+    --width1: 0px;
+    --height1: 0px;
+    --background-color1: #00000000;
+    --font-size1: 0em;
+    --border1: 0px solid white;
+    --padding1: 0px;
+    --raduis1: 0px;
+    --box-shdow1: 0px 0px lightblue;
+  }
+  textarea {
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    overflow-wrap: break-word; /* Ensure long words break to the next line */
+    resize: vertical; /* Allow vertical resize only */
+  }
+  #outputDiv {
+    white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+    overflow: hidden; /*Prevent overflow*/
+    word-wrap: break-word; /*Break long words*/
+    height: 100%; /* Make sure it respects the height */
+    width: 98%;
+  }

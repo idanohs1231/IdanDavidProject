@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>בונה מסכים</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js" async defer></script>
+  </head>
+  <body>
+    <div id="cou">
+      <h3>בונה מסך</h3>
+      <p>סוג האלמנט</p>
+      <label for="lElement"></label>
+      <input type="text" name="lElement" id="lElement" />
+      <p>רוחב</p>
+      <label for="lWidth"></label>
+      <input type="text" name="lWidth" id="lWidth" oninput="upWidth()" />
+      <p>גובה</p>
+      <label for="lHeight"></label>
+      <input type="text" name="lHeight" id="lHeight" oninput="upHeight()" />
+      <p>תוכן</p>
+      <textarea
+        name="lContent"
+        rows="5"
+        cols="22  "
+        oninput="upArea()"
+        id="lContent"
+      ></textarea>
+      <p>צבע הגופן</p>
+      <label for="lColor"></label>
+      <input type="color" name="lColor" id="lColor" oninput="upColor()" />
+      <!-- <input type="color" name="lColor" id="lColor" onchange="upColor()" /> -->
+      <p>גודל הגופן</p>
+      <label for="lLarge"></label>
+      <input type="text" name="lLarge" id="lLarge" oninput="upLarge()" /><br />
+      <button type="btn" id="btn" style="margin-right: 30px">הוסף</button>
+      <button type="btn1" id="btn1">נקה</button> <br />
+    </div>
+    <div><div id="outputDiv"></div></div>
+  </body>
+</html>

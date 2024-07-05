@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>לומדת חשבון</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js" async defer></script>
+ 
+  </head>
+  <body>
+    <p class="center">משחק לימודי חשבון</p>
+    <hr />
+    <p class="optionGame">אפשריות משחק</p>
+    <label for="range-num">בחר טווח מספרים</label>
+    <select name="range-num" id="range-num">
+      <option value="1 - 10">1 - 10</option>
+      <option value="1 - 100" selected>1 - 100</option>
+      <option value="1 - 1000">1 - 1000</option>
+    </select>
+    <label for="arithmetic">בחר אופרטור</label>
+    <select name="arithmetic" id="arithmetic">
+      <option value="פלוס +">פלוס +</option>
+      <option value="מינוס -" selected>מינוס -</option>
+      <option value="כפל *">כפל *</option>
+      <option value="חילוק /">חילוק /</option>
+    </select>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <input type="text" id="result" name="result" />
+
+    <p class="Equal">=</p>
+
+    <button class="buttonOk" type="button" onclick="myFunction()">בדוק</button>
+    <button class="buttonNew" id="clearButton" type="button" onclick="clearTable()">נקה</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>תשובה נכונה</th>
+          <th>תשובה שציינת</th>
+          <th>נקודות</th>
+          <th>תרגיל</th>
+        </tr>
+      </thead>
+      <tbody id="results"></tbody>
+    </table>
+  </body>
+</html>
